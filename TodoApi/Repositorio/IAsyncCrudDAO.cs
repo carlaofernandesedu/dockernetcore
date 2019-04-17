@@ -9,8 +9,8 @@ namespace TodoApi.Repositorio
     {
         void Create(T item);
         Task<List<T>> Get();
-        Task<T> Find(int id);
-
+        Task<T> Find(long id);
+        void Initialize();
 
     }
 }
