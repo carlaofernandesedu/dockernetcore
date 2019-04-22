@@ -16,11 +16,17 @@ namespace TodoApi.Repositorio
             _context =  context;
         }
 
-        public void Create(TodoItem item)
+        public Task<int> Create(TodoItem item)
         {
             _context.TodoItems.Add(item);
-            _context.SaveChanges();
+            return  _context.SaveChangesAsync();
             
+        }
+
+        public Task<int> Update(TodoItem item)
+        {
+            _context.TodoItems.Update(item);
+            return _context.SaveChangesAsync();
         }
 
         public void Dispose()
@@ -51,6 +57,12 @@ namespace TodoApi.Repositorio
             if (_context.TodoItems.FirstOrDefault(i => i.Name == "TodoItem 03") == null)
                 _context.TodoItems.Add(new TodoItem { Name = "TodoItem 03" });
 
+        }
+
+        public Task<int> Delete(TodoItem item)
+        {
+            _context.TodoItems.Remove(item);
+            return _context.SaveChangesAsync();
         }
     }
 }
