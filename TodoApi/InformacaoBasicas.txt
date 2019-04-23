@@ -1,2 +1,7 @@
 ﻿https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.2&tabs=visual-studio
 
+https://docs.microsoft.com/pt-br/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/data-driven-crud-microservice
+https://docs.docker.com/engine/examples/dotnetcore/
+https://channel9.msdn.com/events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3317
+https://docs.docker.com/engine/examples/dotnetcore/
+
