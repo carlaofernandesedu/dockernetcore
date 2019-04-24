@@ -5,3 +5,5 @@ https://docs.docker.com/engine/examples/dotnetcore/
 https://channel9.msdn.com/events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3317
 https://docs.docker.com/engine/examples/dotnetcore/
 
+https://blog.scottlogic.com/2016/09/05/hosting-netcore-on-linux-with-docker.html
+https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/servers/index?view=aspnetcore-2.2&tabs=windows

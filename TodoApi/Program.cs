@@ -17,8 +17,20 @@ namespace TodoApi
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
+            //WebHost.CreateDefaultBuilder(args)
+            //    .UseStartup<Startup>();
+
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls("http://*:5000")
+                .UseIISIntegration()
                 .UseStartup<Startup>();
+
+            return host;
+        }
+          
     }
 }
