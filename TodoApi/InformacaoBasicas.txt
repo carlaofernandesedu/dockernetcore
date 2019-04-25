@@ -9,6 +9,9 @@ https://blog.scottlogic.com/2016/09/05/hosting-netcore-on-linux-with-docker.html
 https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/servers/index?view=aspnetcore-2.2&tabs=windows
 https://github.com/aspnet/KestrelHttpServer/issues/1851
 
+COLOCANDO DOCKER E SQL SERVER 
+https://imasters.com.br/back-end/asp-net-core-2-0-docker-sql-server-2017-primeira-aplicacao-conteinerizada
+
 Problemas para expor a porta no Docker 
 
 Alterar a configuracao de subida do Kestrel 
@@ -22,3 +25,8 @@ docker build -f netcore.dockerfile -t cmelo/netcore .
 
 GERACAO DO CONTAINER
 docker run -d -p 5000:5000 cmelo/netcore
+
+http://localhost:44379/api/values
+
+Exemplo de uso de Docker SQL SERVER WEB API
+https://github.com/kenerry-serain/DockerSQL-FirstApp
