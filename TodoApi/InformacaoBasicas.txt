@@ -16,3 +16,9 @@ Alterar a configuracao de subida do Kestrel
 
 docker run -it -p 5000:5000 -v "c:\temp\dkbuild:/var/app" microsoft/dotnet:sdk 
 dotnet run --server.urls="http://*:5000"
+
+CRIACAO DA IMAGE 
+docker build -f netcore.dockerfile -t cmelo/netcore .
+
+GERACAO DO CONTAINER
+docker run -d -p 5000:5000 cmelo/netcore
